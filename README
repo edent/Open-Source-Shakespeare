@@ -5,5 +5,51 @@ A MySQL database of the complete works of William Shakespeare
 This project presents the complete works of William Shakespeare as a MySQL database.
 
 Project Info: http://shkspr.mobi/blog/index.php/2012/04/open-source-shakespeare-in-mysql
-
 Forked from: http://www.opensourceshakespeare.org/
+
+There are four tables
+
+Paragraphs
+
+This is where the main body of text is. A typical row will look like this
+
+    WorkID: hamlet
+    ParagraphID: 639015
+    ParagraphNum: 3427
+    CharID: hamlet
+    PlainText: Has this fellow no feeling of his business, that he sings at\ngrave-making?
+    Act: 5
+    Scene: 1
+
+Works
+
+This is what translates the “WorkID” into something human readable – plus some extra metadata
+
+    WorkID: hamlet
+    Title: Hamlet
+    LongTitle: Tragedy of Hamlet, Prince of Denmark, The
+    Date: 1600
+    GenreType: Tragedy
+
+Character
+
+This is what translates the CharID into a human readable name and description
+
+    charID: hamlet
+    CharName: Hamlet
+    Abbrev: Ham
+    Works: Tragedy of Hamlet, Prince of Denmark, The
+    Description: son of the former king and nephew to the present king
+
+Chapters
+
+This gives the setting for each Act and Scene.
+
+    WorkID: hamlet
+    ChapterID: 18893
+    Act: 5
+    Scene: 1
+    Description: Elsinore. A churchyard.
+
+
+
