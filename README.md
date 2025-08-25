@@ -4,7 +4,7 @@ A MySQL database of the complete works of William Shakespeare
 
 This project presents the complete works of William Shakespeare as a MySQL database.
 
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=edent42&url=https://github.com/edent/Open-Source-Shakespeare&title=Open-Source-Shakespeare&language=&tags=github&category=software)
+[![DOI](https://zenodo.org/badge/4087225.svg)](https://doi.org/10.5281/zenodo.16944285)
 
 Project Info: http://shkspr.mobi/blog/index.php/2012/04/open-source-shakespeare-in-mysql
 Forked from: http://www.opensourceshakespeare.org/
